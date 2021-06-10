@@ -1,0 +1,97 @@
+@import "../../../scss-library/styles";
+
+.size-xsmall {
+    width: 18px;
+    height: 18px;
+}
+
+.size-small {
+    width: 22px;
+    height: 22px;
+}
+
+.size-medium {
+    width: 28px;
+    height: 28px;
+}
+
+.size-large {
+    width: 32px;
+    height: 32px;
+}
+
+.size-xlarge {
+    width: 38px;
+    height: 38px;
+}
+
+.hide-icon {
+    display: none;
+}
+
+@each $key in map-keys($color-palette) {
+    @if map-has-key($color-palette, $key) {
+        $color: map-get($map: $color-palette, $key: $key) !default;
+
+        .color-#{$key} {
+            .base {
+                fill: $color;
+            }
+
+            .icon {
+                fill: $color;
+            }
+        }
+
+        .circle-color-#{$key} {
+            .circle {
+                fill: $color;
+            }
+        }
+
+        .square-color-#{$key} {
+            .square {
+                fill: $color;
+            }
+        }
+
+        .circle-border-#{$key},
+        .square-border-#{$key} {
+            border: $border-width-unit-small solid $color;
+            box-sizing: border-box;
+        }
+
+        .circle-border-#{$key} {
+            border-radius: 50%;
+        }
+    }
+}
+
+.circle-color-transparent {
+    .circle {
+        fill: transparent;
+    }
+}
+
+.square-color-transparent {
+    .square {
+        fill: transparent;
+    }
+}
+
+.icon-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+
+    &:hover {
+        background-color: color-palette(color-grey);
+        border-color: color-palette(color-grey);
+    }
+
+    svg {
+        polygon {
+            fill: color-palette(color-grey);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+}
+
+#basic-nav-dropdown {
+    position: relative;
+}
+
+.dropdown-holder {
+    [class^="dropdown-menu"] {
+        right: 0;
+        left: unset;
+    }
+}

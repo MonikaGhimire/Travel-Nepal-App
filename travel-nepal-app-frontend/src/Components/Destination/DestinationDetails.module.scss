@@ -1,0 +1,69 @@
+@import "../../scss-library/styles";
+
+.container {
+    overflow: hidden;
+
+    &-header {
+        text-align: left;
+        margin: $spacing-unit;
+        padding-bottom: $spacing-unit;
+        border-bottom: 2px solid $bordor-primary;
+    }
+
+    &-top-section {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        padding: $spacing-unit-large-2 0;
+
+        .image-slider-container {
+            width: 70%;
+        }
+
+        .slider-container {
+            > img {
+                min-width: 300px;
+                height: 300px;
+            }
+        }
+        .destination-details {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    &-middle-section,
+    &-top-section,
+    &-bottom-section {
+        margin: $spacing-unit;
+        border-bottom: 2px solid $bordor-primary;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.average-rating-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: $spacing-unit-large-2;
+
+    > p {
+        padding-right: $spacing-unit-small;
+    }
+}
+
+.details-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: $spacing-unit-large-2;
+}
+
+.feedback-container {
+    width: 70%;
+    margin-top: $spacing-unit-large;
+    border: 2px solid grey;
+    padding: $spacing-unit;
+}

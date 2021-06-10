@@ -1,0 +1,40 @@
+@import "../../scss-library/styles";
+@import "~bootstrap/scss/bootstrap";
+
+.container {
+    width: 100%;
+    background-color: white;
+    width: 600px;
+    min-height: 400px;
+    margin-top: 127px;
+
+    &-canvas {
+        position: relative;
+        background-color: white;
+        padding: $spacing-unit-small;
+    }
+
+    &-header {
+        border-bottom: $border-width-unit-medium solid #e8e3e3;
+        margin-bottom: $spacing-unit-large;
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    outline: none;
+    border: none;
+    align-self: flex-end;
+    font-weight: 700;
+    padding: $spacing-unit-xsmall $spacing-unit-xsmall 0 0;
+    margin: 0;
+}
+
+.Errors {
+    color: red;
+}

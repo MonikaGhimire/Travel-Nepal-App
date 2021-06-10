@@ -1,0 +1,55 @@
+@import "../../scss-library/styles";
+
+.header-container {
+    position: relative;
+    height: 80px;
+}
+
+.login-container {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header-block {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-unit;
+    border-bottom: 2px solid $bordor-primary;
+    height: 80px;
+}
+
+.logo-container {
+    width: 30%;
+    text-align: left;
+
+    > img {
+        height: 70px;
+    }
+}
+
+.left-section-container {
+    text-align: end;
+}
+
+.sign-in-button {
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.dropdown-holder {
+    [class^="dropdown-menu"] {
+        right: 0;
+        left: unset;
+    }
+}

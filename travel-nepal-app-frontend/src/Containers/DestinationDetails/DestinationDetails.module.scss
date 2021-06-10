@@ -1,0 +1,55 @@
+@import "../../scss-library/styles";
+
+.container {
+    &-middle-section {
+        margin: $spacing-unit;
+        border-bottom: 2px solid $bordor-primary;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &-ratings {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 2px solid $bordor-primary;
+        margin: $spacing-unit;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .user-details {
+            // width: 30%;
+            min-width: 200px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+
+.rating {
+    &-header {
+        text-align: left;
+    }
+
+    &-details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: $spacing-unit-small;
+
+        &-header {
+            display: flex;
+            flex-direction: row;
+            font-size: 18px;
+            font-weight: bold;
+
+            > span {
+                padding-right: $spacing-unit-small;
+            }
+        }
+    }
+}

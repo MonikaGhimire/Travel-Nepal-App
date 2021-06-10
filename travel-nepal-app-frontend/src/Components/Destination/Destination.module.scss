@@ -1,0 +1,85 @@
+@import "../../scss-library/styles";
+
+.form {
+    position: relative;
+}
+
+.destination-add {
+    &-container {
+        padding: $spacing-unit;
+    }
+
+    &-form {
+        text-align: left;
+        margin-top: $spacing-unit;
+        margin-left: $spacing-unit-small;
+        width: 80%;
+    }
+}
+
+.Errors {
+    color: red;
+}
+
+.header {
+    text-align: left;
+    border-bottom: 2px solid $bordor-primary;
+    padding: $spacing-unit;
+    // width: 100%;
+}
+
+.form-row {
+    padding: $spacing-unit-xsmall 0;
+}
+
+.submit-button {
+    margin-left: 50%;
+    margin-right: $spacing-unit;
+}
+
+.image-upload {
+    &-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    &-text {
+        color: white;
+        width: 200px;
+        overflow: hidden;
+        height: 200px;
+    }
+
+    &-header {
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: $spacing-unit-large;
+    }
+}
+
+.image-progress-container {
+    width: 100%;
+    text-align: left;
+    padding: 0 $spacing-unit;
+    margin: 0 $spacing-unit-large;
+}
+
+.image-data {
+    margin-left: $spacing-unit-small;
+    font-size: 14px;
+}
+
+.progress-bar-container {
+    padding: $spacing-unit;
+    border-bottom: 2px solid $bordor-primary;
+}
+
+.buttons-container {
+    float: right;
+
+    .button-submit {
+        margin-right: $spacing-unit;
+    }
+}

@@ -1,0 +1,10 @@
+// borders width  //
+$border-width-unit-small: 1px;
+$border-width-unit-medium: 2px;
+$border-width-unit-large: 3px;
+
+// borders radius  //
+$border-radius-unit-small: 4px; /* rounded buttons/inputs etc */
+$border-radius-unit-medium: 6px; /* used for round dashboard cards - when we do them */
+$border-radius-unit-full-circle: 50%; /* for making things a circle */
+$border-radius-unit-rounded-edges: 500px; /* atomic style variable to make a an element have rounded left and right sides */

@@ -1,0 +1,11 @@
+/// RESPONSIVE BREAKPOINTS
+///
+$mq-breakpoints: (
+    mobile: 370px,
+    tablet: 640px,
+    medium: 840px,
+    desktop: 980px,
+    desktop-plus: 1150px,
+    wide: 1300px,
+    extra-wide: 1500px
+);

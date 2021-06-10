@@ -1,0 +1,27 @@
+///// COLOR SETTINGS
+/////
+$color-palette: (
+color-white: #ffffff,
+color-black: #000000,
+color-grey: #6f6f6f,
+color-blue: #54a3d8,
+color-pink: #ff7979,
+color-green: #16cbbe,
+color-orange: #ff9f6f,
+);
+
+/// PRIMARY COLORS
+$bordor-primary: #e0e0e0;
+
+$palette: (
+	white: (base: map-get($map: $color-palette, $key: color-white)),
+	black: (base: map-get($map: $color-palette, $key: color-black)),
+    blue: (base: map-get($map: $color-palette, $key: color-blue)),
+    grey: (base: map-get($map: $color-palette, $key: color-grey)),
+    pink: (base: map-get($map: $color-palette, $key: color-pink)),
+    );
+
+
+
+
+/// SECONDARY COLORS

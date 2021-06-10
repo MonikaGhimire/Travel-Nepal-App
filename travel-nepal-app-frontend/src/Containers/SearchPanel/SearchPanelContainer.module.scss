@@ -1,0 +1,19 @@
+@import "../../scss-library/styles";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $spacing-unit;
+    border-bottom: 2px solid $bordor-primary;
+}
+
+.search-panel {
+    &-header {
+        padding-bottom: $spacing-unit-small;
+    }
+
+    &-input {
+        width: 70%;
+    }
+}
