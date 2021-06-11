@@ -1,5 +1,11 @@
 
-In the project directory, you can run:
+# How to run the application in your machine
+
+You will need to have following programs installed in your
+computer
+- Node.js (make sure `npm` command works)
+
+## Go to your project directory (`travel-nepal-app-frontend`) and run following commands:
 
 ### `npm install`
 installs dependencies into the node_modules/ directory.
